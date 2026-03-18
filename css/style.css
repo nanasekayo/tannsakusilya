@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  background-color: rgb(243, 255, 244);
+  font-size: 16px;
+}
+
+.container {
+  display: flex;         /* 横並び */
+  flex-wrap: wrap;       /* 画面が狭くなったら折り返す */
+  gap: 24px;             /* 要素間の隙間 */
+}
+
+.person { 
+  border-radius: 20px;
+  padding: 20px;
+  width: 250px;          /* 横幅 */
+  box-sizing: border-box; /* パディング込みで幅を計算 */
+  text-align: center;
+  transition: 0.2s;
+  display: block;
+}
+
+.male{
+  background: #e3edff;
+}
+
+.female{
+  background: #fff0f5;
+}
+
+.male:hover {
+  transform: scale(1.03); /* ホバーで拡大 */
+  background-color: #cce6ff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* ホバーで影を追加 */
+}
+
+.female:hover {
+  transform: scale(1.03);
+  background-color: #ffe6f0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* ホバーで影を追加 */
+}
+
+@media (max-width: 600px) {
+  .person {
+    width: 47%;
+    padding: 12px;
+  }
+
+  .container {
+    gap: 16px; 
+  }
+
+  body{
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .sort,
+  .filter {
+    margin-left: 0;
+  }
+
+  .filter {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .filter-group {
+    margin-right: 0;
+  }
+
+  .person {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .person img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+  }
+
+  #result-count {
+    text-align: left;
+    margin-right: 0;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .person { width: 48%; }
+}
+
+.person img {
+  width: 180px;
+  height: 150px;
+  border-radius: 10px; /* 角を丸くする */
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+a,a:visited {
+  color: black;        /* 文字色を黒に */
+  text-decoration: none; /* 下線を消す */
+}
+
+.blue, .blue:visited {
+  color: blue;
+}
+
+h4 {
+  margin: 2px;
+}
+
+.sort {
+  margin-left: 40px;
+}
+
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 40px;
+}
+
+.filter-group {
+  margin-right: 60px;
+}
+
+select{
+  border-radius: 2px;
+}
+
+#result-count {
+  text-align: right;
+  margin-right: 20px;
+}
+
+header {
+  margin-left: 20px;
+}

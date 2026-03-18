@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nanase kayo宅</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>nanase kayo宅の一覧</h1>
+    <p>nanase kayo宅の皆さんの紹介ページ。<br>
+      nanase kayo卓の一覧より自己満度が高いけどもし見たかったらご自由にどうぞ。<br>
+      パソコン閲覧がおすすめだけどスマホ等でも閲覧可能です。<br>
+      nanase kayo卓は<a href="https://nanasekayo.github.io/takubeya/" target="_blank" class="blue">こちら</a>から。</p>
+</header>
+
+  <div class="sort"><h3>並び替え</h3>
+  <label><input type="radio" name="sort" value="name" checked> 50音順</label>
+  <label><input type="radio" name="sort" value="age"> 年齢順</label>
+  <label><input type="radio" name="sort" value="height"> 身長順</label></div>
+
+<div class="filter">
+  <div class="filter-group">
+  <h3>性別</h3>
+  <label><input type="radio" name="gender" value="all" checked> 全て</label>
+  <label><input type="radio" name="gender" value="male"> 男性</label>
+  <label><input type="radio" name="gender" value="female"> 女性</label></div>
+
+  <div class="filter-group">
+    <h3>年齢区分</h3>
+    <label><input type="radio" name="age" value="all" checked> 全て</label>
+    <label><input type="radio" name="age" value="adult"> 成人</label>
+    <label><input type="radio" name="age" value="minor"> 未成年</label></div>
+</div>
+
+<p id="result-count"></p>
+
+<hr>
+
+<div class="container">
+
+  <a href="index/amasaki.html" class="person female"
+       data-name="あまさき"
+       data-age="18"
+       data-height="159"
+       data-gender="female">
+        <img src="img/amasaki.png" alt="天崎白梨">
+     <h4>天崎白梨</h4>
+     <p>女/18歳/159cm</p></a>
+
+  <a href="index/kamiya.html" class="person female"
+       data-name="かみや"
+       data-age="24"
+       data-height="149"
+       data-gender="female">
+        <img src="img/kamiya.png" alt="夏宮葵々">
+     <h4>夏宮葵々</h4>
+     <p>女/24歳/149cm</p></a>
+
+  <a href="index/kukuru.html" class="person male"
+       data-name="くくる"
+       data-age="15"
+       data-height="140"
+       data-gender="male">
+        <img src="img/kukuru.png" alt="ククル">
+     <h4>ククル</h4>
+     <p>男/15歳/140cm</p></a>
+
+  <a href="index/kuze.html" class="person male"
+       data-name="くぜ"
+       data-age="18"
+       data-height="170"
+       data-gender="male">
+        <img src="img/kuze.png" alt="久世蒼汰">
+     <h4>久世蒼汰</h4>
+     <p>男/18歳/170cm</p></a>
+
+  <a href="index/siroame.html" class="person male"
+       data-name="しろあめ"
+       data-age="22"
+       data-height="174"
+       data-gender="male">
+        <img src="img/siroame.png" alt="城雨疾輝">
+     <h4>城雨疾輝</h4>
+     <p>男/22歳/174cm</p></a>
+
+  <a href="index/sena.html" class="person male"
+       data-name="せな"
+       data-age="19"
+       data-height="170"
+       data-gender="male">
+        <img src="img/sena.png" alt="瀬名怜緒">
+     <h4>瀬名怜緒</h4>
+     <p>男/19歳/170cm</p></a>
+
+  <a href="index/sorati.html" class="person female"
+       data-name="そらち"
+       data-age="17"
+       data-height="153"
+       data-gender="female">
+        <img src="img/sorati.png" alt="宙知茜">
+     <h4>宙知茜</h4>
+     <p>女/17歳/153cm</p></a>
+
+  <a href="index/takamiya.html" class="person female"
+       data-name="たかみや"
+       data-age="16"
+       data-height="149"
+       data-gender="female">
+        <img src="img/takamiya.png" alt="高宮萌笑">
+     <h4>高宮萌笑</h4>
+     <p>女/16歳/149cm</p></a>
+
+  <a href="index/tukimiya.html" class="person female"
+       data-name="つきみや"
+       data-age="12"
+       data-height="147"
+       data-gender="female">
+        <img src="img/tukimiya.png" alt="月宮詩衣">
+     <h4>月宮詩衣</h4>
+     <p>女/12歳/147cm</p></a>
+
+  <a href="index/tojo.html" class="person female"
+       data-name="とうじょう"
+       data-age="15"
+       data-height="152"
+       data-gender="female">
+        <img src="img/tojo.png" alt="東條珠胡">
+     <h4>東條珠胡</h4>
+     <p>女/15歳/152cm</p></a>
+
+  <a href="index/nakarai.html" class="person male"
+       data-name="なからい"
+       data-age="16"
+       data-height="167"
+       data-gender="male">
+        <img src="img/nakarai.png" alt="半井蓮">
+     <h4>半井蓮</h4>
+     <p>男/16歳/167cm</p></a>
+
+  <a href="index/nanase.html" class="person male"
+       data-name="ななせ"
+       data-age="20"
+       data-height="164"
+       data-gender="male">
+        <img src="img/nanase.png" alt="七彩香陽">
+      <h4>七彩香陽</h4>
+      <p>男/20歳/164cm</p></a>
+
+  <a href="index/hanada.html" class="person female"
+       data-name="はなだ"
+       data-age="12"
+       data-height="151"
+       data-gender="female">
+        <img src="img/hanada.png" alt="縹">
+      <h4>縹</h4>
+      <p>女/12歳/151cm</p></a>
+
+  <a href="index/hayae.html" class="person male"
+       data-name="はやえ"
+       data-age="17"
+       data-height="167"
+       data-gender="male">
+        <img src="img/hayae.png" alt="早枝奏汰">
+      <h4>早枝奏汰</h4>
+      <p>男/17歳/167cm</p></a>
+
+  <a href="index/hirasaka.html" class="person female"
+       data-name="ひらさか"
+       data-age="21"
+       data-height="161"
+       data-gender="female">
+        <img src="img/hirasaka.png" alt="平坂愛音">
+      <h4>平坂愛音</h4>
+      <p>女/21歳/161cm</p></a>
+
+  <a href="index/mano.html" class="person female"
+       data-name="まの"
+       data-age="27"
+       data-height="160"
+       data-gender="female">
+        <img src="img/mano.png" alt="真野榴奈">
+      <h4>真野榴奈</h4>
+      <p>女/27歳/160cm</p></a>
+
+  <a href="index/mizuno.html" class="person female"
+       data-name="みずの"
+       data-age="27"
+       data-height="150"
+       data-gender="female">
+        <img src="img/mizuno.png" alt="水野翔菜">
+      <h4>水野翔菜</h4>
+      <p>女/27歳/150cm</p></a>
+
+  <a href="index/mitora.html" class="person male"
+       data-name="みとら"
+       data-age="15"
+       data-height="158"
+       data-gender="male">
+        <img src="img/mitora.png" alt="美虎碧海">
+      <h4>美虎碧海</h4>
+      <p>男/15歳/158cm</p></a>
+
+  <a href="index/yamano.html" class="person male"
+       data-name="やまの"
+       data-age="16"
+       data-height="162"
+       data-gender="male">
+        <img src="img/yamano.png" alt="山野凪沙">
+      <h4>山野凪沙</h4>
+      <p>男/16歳/162cm</p></a>
+
+  <a href="index/yukari.html" class="person female"
+       data-name="ゆかり"
+       data-age="26"
+       data-height="158"
+       data-gender="female">
+        <img src="img/yukari.png" alt="紫桜">
+      <h4>紫桜</h4>
+      <p>女/26歳/158cm</p></a>
+
+  <a href="index/yuzuriha.html" class="person female"
+       data-name="ゆずりは"
+       data-age="25"
+       data-height="162"
+       data-gender="female">
+        <img src="img/yuzuriha.png" alt="楪紬">
+      <h4>楪紬</h4>
+      <p>女/25歳/162cm</p></a>
+</div>      
+
+<script>
+let currentSort = "name";
+let filters = {
+  genders: [],
+  ages: []
+};
+
+document.querySelectorAll("input[name='sort']").forEach(radio => {
+  radio.addEventListener("change", () => {
+    currentSort = document.querySelector("input[name='sort']:checked").value;
+    render();
+  });
+});
+
+document.querySelectorAll("input[name='gender'], input[name='age']").forEach(radio => {
+  radio.addEventListener("change", updateFilter);
+});
+
+
+function updateFilter() {
+  const gender = document.querySelector("input[name='gender']:checked").value;
+  const age = document.querySelector("input[name='age']:checked").value;
+
+  filters.genders = (gender === "all") ? [] : [gender];
+  filters.ages = (age === "all") ? [] : [age];
+
+  render();
+}
+
+function render() {
+  const container = document.querySelector(".container");
+  const persons = Array.from(document.querySelectorAll(".person"));
+
+  persons.forEach(person => {
+    const age = Number(person.dataset.age);
+    const gender = person.dataset.gender;
+
+    let show = true;
+
+    if (filters.genders.length > 0 &&
+        !filters.genders.includes(gender)) {
+      show = false;
+    }
+
+    if (filters.ages.length > 0) {
+      const isAdult = age >= 20;
+      if (!(
+        (filters.ages.includes("adult") && isAdult) ||
+        (filters.ages.includes("minor") && !isAdult)
+      )) {
+        show = false;
+      }
+    }
+
+    person.style.display = show ? "" : "none";
+  });
+
+  if (currentSort) {
+    const visiblePersons = persons.filter(p => p.style.display !== "none");
+
+    visiblePersons.sort((a, b) => {
+      if (currentSort === "name") {
+        return a.dataset.name.localeCompare(b.dataset.name, "ja");
+      }
+      return Number(a.dataset[currentSort]) -
+             Number(b.dataset[currentSort]);
+    });
+
+    visiblePersons.forEach(person => {
+      container.appendChild(person);
+    });
+  }
+
+  const visibleCount = persons.filter(p => p.style.display !== "none").length;
+  const totalCount = persons.length;
+  document.getElementById("result-count").textContent = `表示件数: ${visibleCount}/${totalCount}`;
+
+}
+
+render();
+</script>
+
+</body>
+</html>
